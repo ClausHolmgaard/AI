@@ -1,0 +1,14 @@
+Environment for GridWorld
+
+Provides current state
+
+function action:
+    takes action
+    updates position
+    returns reward and new state
+
+All actions available in all states
+
+
+Use current position as state for learning agent?
+add each position to lookup as it is encountered

@@ -1,0 +1,15 @@
+import numpy as np
+
+from GridWorld import ActionEnum, GridWorld
+
+NUM_ACTIONS = 4
+
+class GridAgent(object):
+    def __init__(self, height, width):
+        self.e = GridWorld(height, width)
+
+        # Initialize action value table
+        self.Q = np.zeros((height, width, NUM_ACTIONS))
+
+if __name__ == "__main__":
+    a = GridAgent(4, 4)
